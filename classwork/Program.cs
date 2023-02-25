@@ -97,8 +97,8 @@ for (int i = 0; i < array.Length; i++)
 
 //Task33 задайте массив. программа которая 
 //определяет есть ли это в массиве
-Task33 ();
 #region
+
 void Task33()
 {
   int length = Prompt("Длина массива: ");
@@ -126,3 +126,4 @@ else
   System.Console.WriteLine("Данного числa НЕТ в массиве");
 }
 #endregion
+Task33 ();
