@@ -126,4 +126,54 @@ else
   System.Console.WriteLine("Данного числa НЕТ в массиве");
 }
 #endregion
-Task33 ();
+//Task33 ();
+
+//варианты группы
+//Task_32_1 ();
+static void Task_32_1 ()
+{
+  int [] arr = new int [8];
+  Random rand = new Random ();
+  for (int i = 0; i <arr.Length; i++)
+  {
+    arr[i] = rand.Next (-10,11);
+    System.Console.Write($"{arr[i]}\t"); // \t - помогает вывести массив в строку
+  }
+  System.Console.WriteLine();
+  for (int i = 0; i <arr.Length; i++)
+  {
+    arr[i] *= -1;
+    System.Console.Write($"{arr[i]}\t");
+  }
+}
+
+//Task_33_1 ();
+#region
+void Task_33_1 ()
+{
+  int [] arr = {6, 5, 6, 7, 10, 1};
+  int number = Prompt ("введите число для проверки: ");
+  int index = 0;
+  // задали индекс вне всей функции
+
+if (FindNumb(arr, number, out index) == true)
+// добавили к выводу переменную индекс
+{
+System.Console.WriteLine($"Число {number} есть в массиве под индексом {index}");
+}
+else
+System.Console.WriteLine($"Числа {number} нет в массиве");
+}
+
+bool FindNumb (int [] arr, int number, out int index)
+//  out int index)  - добавили переменную индекс
+{
+for (index = 0; index < arr.Length; index ++)
+{
+  if (arr[index] == number)
+  return true;
+  }
+  return false;
+}
+#endregion
+
