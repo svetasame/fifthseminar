@@ -3,7 +3,7 @@
 //трёхзначными числами. Напишите программу, которая покажет количество 
 //чётных чисел в массиве.
 //[345, 897, 568, 234] -> 2
-
+#region
 static int Prompt(string message)
 {
 System.Console.WriteLine(message);
@@ -48,12 +48,13 @@ FindEven (arrayran);
 }
 
 //Task34();
+#endregion
 
 //Задача 36: Задайте одномерный массив, заполненный случайными числами. 
 //Найдите сумму элементов, стоящих на нечётных позициях.
 //[3, 7, 23, 12] -> 19
 //[-4, -6, 89, 6] -> 0
-
+#region
 int [] GenerateArrayRan (int Length)
 {
   int [] array = new int [Length];
@@ -65,7 +66,7 @@ int [] GenerateArrayRan (int Length)
   return array;
 }
 
-void FindSumOdd_1(int[] array)
+void FindSumOdd(int[] array)
 {
 int res = 0;
 for (int i = 0; i < array.Length; i++)
@@ -78,42 +79,22 @@ for (int i = 0; i < array.Length; i++)
   System.Console.WriteLine($"Сумма чисел, стоящих на нечетных позициях = {res}");
 }
 
-void FindSumOdd_2(int[] array)
-{
-int res = 0;
-for (int i = 0; i < array.Length; i++)
-  {
-    if (i % 2 == 0)  
-    res = res + array[i];
-    else
-    res = res + 0;
-  }
-  System.Console.WriteLine($"Сумма чисел, стоящих на нечетных позициях = {res}");
-}
-
-void Task36_1() //если мы считаем нечетными позициями нечетные индексы как в задании
+void Task36() //если мы считаем нечетными позициями нечетные индексы
 {
 int length = Prompt("Длина массива: ");
 int [] arrayran = GenerateArrayRan(length);
 PrintArray (arrayran);
-FindSumOdd_1 (arrayran);
-}
-
-void Task36_2() //если мы считаем нечетными позициями четные индексы
-{
-int length = Prompt("Длина массива: ");
-int [] arrayran = GenerateArrayRan(length);
-PrintArray (arrayran);
-FindSumOdd_2 (arrayran);
+FindSumOdd (arrayran);
 }
 
 //Task36_1();
 //Task36_2();
+#endregion
 
 // Задача 38: Задайте массив вещественных чисел. 
 // Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
-
+#region
 double [] GenerateArrayRanFloat (int Length)
 {
   double [] array = new double [Length];
@@ -147,7 +128,8 @@ if (array[i] < min)
 min = max = array[i];
 i++;
 }
-System.Console.WriteLine($"Разница между {max} и {min} = {max-min}");
+double diff = Math.Round((max-min),2);
+System.Console.WriteLine($"Разница между {max} и {min} = {diff}");
 }
 
 void Task38()
@@ -158,4 +140,16 @@ PrintArrayFloat (arrayran);
 DiffMaxMin (arrayran);
 }
 
-Task38();
+//Task38();
+#endregion
+
+void TaskNumber()
+{
+  int number = Prompt("Введите номер задачи: ");
+  if (number == 34) Task34();
+  else if (number == 36) Task36();
+  else if (number == 38) Task38();
+  else System.Console.WriteLine("Ошибка, введите номер заново");
+}
+
+TaskNumber();
