@@ -91,7 +91,7 @@ for (int i = 0; i < array.Length; i++)
   System.Console.WriteLine($"Сумма чисел, стоящих на нечетных позициях = {res}");
 }
 
-void Task36_1() //если мы считаем нечетными позициями нечетные индексы
+void Task36_1() //если мы считаем нечетными позициями нечетные индексы как в задании
 {
 int length = Prompt("Длина массива: ");
 int [] arrayran = GenerateArrayRan(length);
@@ -108,4 +108,54 @@ FindSumOdd_2 (arrayran);
 }
 
 //Task36_1();
-Task36_2();
+//Task36_2();
+
+// Задача 38: Задайте массив вещественных чисел. 
+// Найдите разницу между максимальным и минимальным элементов массива.
+// [3 7 22 2 78] -> 76
+
+double [] GenerateArrayRanFloat (int Length)
+{
+  double [] array = new double [Length];
+  Random ran = new Random();
+
+  for (int i = 0; i < array.Length; i++)
+  {
+    array[i] = Math.Round(ran.NextDouble() * 100,2);
+
+  }
+  return array;
+}
+
+void PrintArrayFloat (double[] array)
+{
+  string sa = string.Join(" ", array);
+  System.Console.WriteLine($"[{sa}]");
+}
+
+void DiffMaxMin (double[] array)
+{
+int i = 0;
+double max = array[i];
+double min = array[i];
+while (i < array.Length)
+{
+if (array[i] > max)
+max = array[i];
+i++;
+if (array[i] < min)
+min = max = array[i];
+i++;
+}
+System.Console.WriteLine($"Разница между {max} и {min} = {max-min}");
+}
+
+void Task38()
+{
+int length = Prompt("Длина массива: ");
+double [] arrayran = GenerateArrayRanFloat(length);
+PrintArrayFloat (arrayran);
+DiffMaxMin (arrayran);
+}
+
+Task38();
