@@ -87,8 +87,7 @@ PrintArray (arrayran);
 FindSumOdd (arrayran);
 }
 
-//Task36_1();
-//Task36_2();
+//Task36();
 #endregion
 
 // Задача 38: Задайте массив вещественных чисел. 
