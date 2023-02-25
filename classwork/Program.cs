@@ -181,7 +181,6 @@ for (index = 0; index < arr.Length; index ++)
 
 // задача 35 найдите массив из 123 слуйчайных чисел
 // найдите кол во элементов, значения которых лежит в отрезке [10, 99]
-
 #region
 int [] array123 = new int [123];
 int [] GetArray123 ()
@@ -212,4 +211,65 @@ PrintArray (array123);
 FindAndSumArray (array123);
 }
 #endregion
-Task35();
+//Task35();
+
+
+// задача 37 найти произведение пар чисел в одномерном
+//массиве. пара это первый и последный элемент, 2 и предпоследний и тд 
+//результат в новом массиве
+
+#region
+int [] GetArrayRan(int length)
+{
+  int [] array = new int [length];
+  for (int i = 0; i < array.Length; i++)
+    {
+      array[i] = new Random().Next(1, 10);
+    }
+  return array;
+}
+
+void SumOfPair(int[] array)
+{
+int sum = 0;
+int i = 0;
+int j = array.Length - 1;
+if (array.Length % 2 == 0)
+  {
+  while (i < array.Length &&  j >= array.Length/2)
+  {
+    sum = array[i] + array[j];
+    Console.Write($"{array[i]} + {array[j]} = {sum}" + " ");
+    i++;
+    j--;
+    }
+  }
+else
+  {
+  while (i < array.Length &&  j > array.Length/2)
+  {
+    sum = array[i] + array[j];
+    Console.Write($"{array[i]} + {array[j]} = {sum}" + " ");
+    i++;
+    j--;
+    }
+}
+}
+
+static int Prompt1(string message)
+{
+System.Console.WriteLine(message);
+int result = Convert.ToInt32(Console.ReadLine());
+return result;
+}
+
+void Task37()
+{
+int length = Prompt1("Длина массива: ");
+int [] arrayran = GetArrayRan(length);
+PrintArray (arrayran);
+SumOfPair (arrayran);
+}
+#endregion
+
+Task37();
