@@ -130,6 +130,7 @@ else
 
 //варианты группы
 //Task_32_1 ();
+#region
 static void Task_32_1 ()
 {
   int [] arr = new int [8];
@@ -146,6 +147,7 @@ static void Task_32_1 ()
     System.Console.Write($"{arr[i]}\t");
   }
 }
+#endregion
 
 //Task_33_1 ();
 #region
@@ -177,3 +179,37 @@ for (index = 0; index < arr.Length; index ++)
 }
 #endregion
 
+// задача 35 найдите массив из 123 слуйчайных чисел
+// найдите кол во элементов, значения которых лежит в отрезке [10, 99]
+
+#region
+int [] array123 = new int [123];
+int [] GetArray123 ()
+{
+  int [] array = new int [123];
+  for (int i = 0; i < array.Length; i++)
+  {
+    array[i] = new Random().Next(1, 124);
+  }
+  return array;
+}
+
+void FindAndSumArray(int[] array)
+{
+int res = 0;
+for (int i = 0; i < array.Length; i++)
+  {
+    if (array [i] > 10 && array [i] < 99)
+    res += 1;
+  }
+  System.Console.WriteLine($"Количество числет от 10 до 99 = {res}");
+}
+
+void Task35()
+{
+array123 = GetArray123();
+PrintArray (array123);
+FindAndSumArray (array123);
+}
+#endregion
+Task35();
