@@ -229,33 +229,6 @@ int [] GetArrayRan(int length)
   return array;
 }
 
-// void SumOfPair(int[] array)
-// {
-// int sum = 0;
-// int i = 0;
-// int j = array.Length - 1;
-// if (array.Length % 2 == 0)
-//   {
-//   while (i < array.Length &&  j >= array.Length/2)
-//   {
-//     sum = array[i] * array[j];
-//     Console.Write($"{array[i]} * {array[j]} = {sum}" + " ");
-//     i++;
-//     j--;
-//     }
-//   }
-// else
-//   {
-//   while (i < array.Length &&  j > array.Length/2)
-//   {
-//     sum = array[i] * array[j];
-//     Console.Write($"{array[i]} * {array[j]} = {sum}" + " ");
-//     i++;
-//     j--;
-//     }
-// }
-// }
-
 void SumOfPair(int[] array)
 {
 int sum = 0;
@@ -300,4 +273,4 @@ SumOfPair (arrayran);
 }
 #endregion
 
-Task37();
+//Task37();
