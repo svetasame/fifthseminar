@@ -1,0 +1,15 @@
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\bin\Debug\net6.0\classwork.exe
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\bin\Debug\net6.0\classwork.deps.json
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\bin\Debug\net6.0\classwork.runtimeconfig.json
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\bin\Debug\net6.0\classwork.dll
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\bin\Debug\net6.0\classwork.pdb
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\obj\Debug\net6.0\classwork.csproj.AssemblyReference.cache
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\obj\Debug\net6.0\classwork.GeneratedMSBuildEditorConfig.editorconfig
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\obj\Debug\net6.0\classwork.AssemblyInfoInputs.cache
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\obj\Debug\net6.0\classwork.AssemblyInfo.cs
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\obj\Debug\net6.0\classwork.csproj.CoreCompileInputs.cache
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\obj\Debug\net6.0\classwork.dll
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\obj\Debug\net6.0\refint\classwork.dll
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\obj\Debug\net6.0\classwork.pdb
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\obj\Debug\net6.0\classwork.genruntimeconfig.cache
+J:\УЧЕБА ГИК БРЕЙНС\languages\fifthseminar\classwork\obj\Debug\net6.0\ref\classwork.dll
